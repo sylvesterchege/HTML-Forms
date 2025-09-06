@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creation of Form in HTML</title>
+    <H2> <strong>User Registration Form</strong> </H2>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="First Name">First Name:</label>
+            <input type="text"> <br> <br>
+            <label for="Last Name">Last Name:</label>
+            <input type="text"> <br><br>
+            <label for="Date of Birth:">Date of Birth</label>
+            <input type="date"> <br> <br>
+            <label for="Age">Age</label>
+            <input type="number"> <br> <br>
+            <label for="Gender">Gender</label> <br>
+            <input type="radio">
+            <label for="Male">Male</label> <br>
+            <input type="radio">
+            <label for="Female">Female</label> <br> <br>
+            <label for="Profile Photo">Profile Photo</label>
+            <input type="file"> <br> <br>                
+        </fieldset>
+        <fieldset>
+            <legend>Contact & Address Information</legend>
+            <label for="Email Address">Email Address</label>
+            <input type="email"> <br> <br>
+            <label for="Phone Number">Phone Number</label>
+            <input type="text"> <br><br>
+            <label for="Personal Website">Personal Website</label>
+            <input type="Website" placeholder="https//example.com"> <br><br>
+            <label for="Street Address">Street Address</label>
+            <input type="text"> <br><br>
+            <label for="City">City</label>
+            <input type="text"> <br><br>
+            <label for="Country">Country</label>
+            <select name="Country" id="Country">
+                <option value=""disabled selected hidden"> select country</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Ethiopia"></option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="MAR">Morocco</option>
+            </select> <br><br>
+            <label for="Zip/Postal Code">Zip/Postal Code</label>
+            <input type="text"> <br><br>
+            <label for="Preferred Contact Time">Preferred Contact Time</label>
+            <input type="time"> <br> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Preference & Interest</legend>
+            <label for="Favorite Color">Favorite Color</label>
+            <input type="color"><br><br>
+            <label for="Experience level">Experience level(1-10)</label>
+            <input type="range"><br> <br>
+            <label for="Birth Month">Birth Month</label>
+            <input type="month"> <br> <br>
+            <label for="Available Week">Available Week</label>
+            <input type="week"> <br><br>
+            <label for="Search Keywords">Search Keywords</label>
+            <input type="text" placeholder="Enter Keywords"> <br><br>
+            <label for="Interests(Select all that apply)">Interests(Select all that apply)</label> <br>
+            <input type="checkbox" name="interest" value="Technology">Technology</input> <br>
+            <input type="checkbox" name="interest" value="Sports">Sports</input> <br>
+            <input type="checkbox" name="interest" value="Music">Music</input> <br>
+            <input type="checkbox" name="interest" value="Travel">Travel</input><br>
+            <input type="checkbox" name="interest" value="Reading">Reading</input> <br>
+            <input type="checkbox" name="interest" value="Cooking">Cooking</input> <br> <br>
+            <label for="Education Level">Education Level</label>
+            <select name="Education Level" id="Education Level">Education Level
+                <option value=""disabled selected hidden">select education level</option>
+                <option value="Bachelor">Bachelor</option>
+                <option value="O level">O level</option>
+                <option value="PHD">PHD</option>
+                <option value="Masters">Masters</option>
+            </select> <br><br>
+            <label for="Create Passwords">Create Passwords</label>
+            <input type="password" required> <br><br>
+            <label for="Confirm Passwords">Confirm Passwords</label>
+            <input type="password" required>
+        </fieldset>
+        <fieldset>
+            <legend>Feedback & Additional Information</legend>
+            <label for="Tell us about yourself">Tell us about yourself</label> <br>
+            <textarea name="Tell us about yourself" id="Tell us about yourself" rows="5" cols="40" placeholder="Write a brief description about yourself"></textarea> <br><br>
+            <label for="Suggestion for improvement">Suggestion for Improvement</label> <br>
+            <textarea name="Suggestion for Improvements" id="Suggestions for improvements" rows="3" cols="40" placeholder="Any suggestions or feedback"></textarea> <br> <br>
+            <label for="Registration Date & Time">Registration Date & Time</label>
+            <input type="datetime-local"><br><br>
+            <label for="How did you hear about Us">How did you hear about Us</label>
+            <select name="How did you hear about Us" id="How did you hear about us">
+                <option value=""disable selected hidden">select source</option>
+                <option value="Google">Google</option>
+                <option value="Referral">Referral</option>
+                <option value="Company site">Company site</option>
+            </select> <br> <br>
+            <label for="Upload Resume Optional">Upload Resume optional</label>
+            <input type="file"> <br> <br>
+            <input type="checkbox" name="Subscribe" value="Subscribe to our Newsletter"> Subscribe to our newsletter</input> <br>
+            <input type="checkbox" name="Agree to Terms& Conditions" value="I agree to terms & Conditions" required> I agree to terms & Conditions</input> <br>
+            <input type="checkbox" name="Privacy" value="I agree to the Privacy Policy">I agree to the Privacy Policy</input>            
+        </fieldset>
+        <button type="submit">submit</button>
+        <button type="reset">Clear Form</button>
+    </form>
+    
+</body>
+</html>
